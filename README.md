@@ -52,23 +52,23 @@ Also allows mixins (ruby-ish):
 
 And setters/getters for properties (in this case in a mixin, but could be in the class definition):
 
-  var Weighted = {
+    var Weighted = {
         
-    get weight() {
-      return this._weight;
-    },
+      get weight() {
+        return this._weight;
+      },
     
-    set weight(val) {
-      this._weight = val;
-    }  
+      set weight(val) {
+        this._weight = val;
+      }  
     
-  };
+    };
 
 New classes can be extensions of old ones:
 
-  var Mouse = Animal.extend({
-    includes: Weighted,
-    squeak: function() {
-      print("eeek!");
-    }
-  });
+    var Mouse = Animal.extend({
+      includes: Weighted,
+      squeak: function() {
+        print("eeek!");
+      }
+    });
