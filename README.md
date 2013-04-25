@@ -18,14 +18,14 @@ Basic example:
 
 Allows initialize function:
 
-  var Person = Class({
-    initialize: function Person() {
-      this.name = 'John Smith';
-    },
-    speak: function() {
-      print('My name is ' + this.name);
-    }
-  });
+    var Person = Class({
+      initialize: function Person() {
+        this.name = 'John Smith';
+      },
+      speak: function() {
+        print('My name is ' + this.name);
+      }
+    });
 
 Also allows mixins (ruby-ish):
 
